@@ -1,2 +1,4 @@
 .vs/
 packages/
+*.7z
+*.zip
