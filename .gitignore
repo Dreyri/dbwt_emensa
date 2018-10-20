@@ -2,3 +2,4 @@
 packages/
 *.7z
 *.zip
+.~lock.*
