@@ -1,0 +1,154 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Meilenstein1">
+    <meta name="author" content="Frederik Engels">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Detail</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/Style.css">
+</head>
+<body>
+    <!-- Navigations Bar oben -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="row col-md-8">
+                <a class="navbar-brand" href="/Start.html">e-Mensa</a>
+                <ul class="navbar-nav">
+                    <li class="active nav-item em-separator-right"><a class="em-hl nav-link" href="/Start.html">Start<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item em-separator-right"><a class="em-hl nav-link" href="/Produkte.html">Mahlzeiten</a></li>
+                    <li class="nav-item em-separator-right"><a class="em-hl nav-link" href="#">Bestellung</a></li>
+                    <li><a class="em-hl nav-link" href="https://www.fh-aachen.de">FH-Aachen</a></li>
+                </ul>
+            </div>
+            <div class="row col-md-4 input-group">
+                <form action="http://www.google.de/search" method="get" class="form-inline md-form form-sm mt-0">
+                    <div class="row">
+                        <button type="submit" class="btn btn-default"><span class="fa fa-search" aria-hidden="true"></span></button>
+                        <input name="q" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <input type="hidden" name="as_sitesearch" value="fh-aachen.de" />
+                    </div>
+                </form>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Container für Freiflächen/Texte -->
+    <div class="container-fluid">
+        <!-- oberere Textbereich -->
+        <div class="row" style="height:30%;">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <h1>Details für "Falafel"</h1>
+            </div>
+            <div class="col-md-2">
+                <p style="padding-top:40px" class="text_rechts">Gast-Preis</p>
+            </div>
+
+        </div>
+        <!-- Linker Textbereich -->
+        <div class="row">
+            <div class="col-md-2">
+
+                <fieldset class="feld1">
+                    <legend>Login</legend>
+                    <div>
+                        <input type="text" class="form-control" id="Username" placeholder="Benutzer">
+                        <input type="password" class="form-control" id="Password" placeholder="*******">
+                        <a class="links" href="Login.html">Anmelden</a>
+                    </div>
+                </fieldset>
+
+                <p>
+                    Melden Sie sich jetzt an, um die wirklich viel günstigeren Preise für Mitarbeiter und Stundenten zu sehen.
+                </p>
+
+            </div>
+            <!-- rechter Textbereich -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-10">
+                        <img src="/img/produkte/Falafel.png" alt="#" />
+                    </div>
+                    <div class="col-md-2">
+
+
+                        <p class="text_rechts">
+                            <h2 class="text_rechts">5,95€</h2>
+                            <button type="button" class="btn btn-default titlebar-search"><span class="glyphicon glyphicon-cutlery"></span> Vorbestellen</button>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div class="col-md-8">
+                            <div class="tab">
+                                <button class="tablinks active" onclick="openDetail(event, 'Beschreibung')" id="defaultOpen">Beschreibung</button>
+                                <button class="tablinks" onclick="openDetail(event, 'Zutaten')">Zutaten</button>
+                                <button class="tablinks" onclick="openDetail(event, 'Bewertungen')">Bewertungen</button>
+                            </div>
+
+                            <div id="Beschreibung" class="tabcontent">
+                                <p>Falafel wie vom Turken.</p>
+                            </div>
+
+                            <div id="Zutaten" class="tabcontent">
+                                <p>Kichererbsen und noch andere Sachen die rein gehen.</p>
+                            </div>
+
+                            <div id="Bewertungen" class="tabcontent">
+                                <form action="http://bc5.m2c-lab.fh-aachen.de:8080/data.php" method="post">
+                                    <textarea name="bemerkung" rows="4" cols="80">Bitte geben Sie hier eine kurze Bewertung der Mahlzeit ein.
+                                       </textarea>
+                                    <br />
+
+                                    <label>Name: </label>
+                                    <input type="text" name="benutzer">
+                                    <br />
+                                    <label>Bewertung: </label>
+                                    <input type="number" id="bewertung" name="bewertung" min="1" max="5">
+                                    <br />
+                                    <button type="submit" class="btn btn-default">Übermitteln</button>
+                                    <input type="hidden" name="matrikelnummer" value="3129739">
+                                    <input type="hidden" name="kontrolle" value="Key">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav bottom -->
+    <!-- Navigation Bar -->
+    <footer class="container em-separator-top">
+        <nav class="navbar navbar-expand-sm row">
+            <div class="col-md-2">
+                <a>(c) 2018 DBWT</a>
+            </div>
+            <div class="col-md-10">
+                <ul class="navbar-nav">
+                    <li class="nav-item em-separator-right"><a class="em-hl nav-link" href="#">Login</a></li>
+                    <li class="nav-item em-separator-right"><a class="em-hl nav-link" href="#">Registrieren</a></li>
+                    <li class="nav-item em-separator-right"><a class="em-hl nav-link" href="#">Zutatenliste</a></li>
+                    <li class="nav-item"><a class="em-hl nav-link" href="/Impressum.html">Impressum</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
