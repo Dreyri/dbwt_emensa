@@ -90,6 +90,37 @@
                 <div class="row">
                     <div>
                         <div class="col-md-8">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#beschreibung">Beschreibung</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#zutaten">Zutaten</a></li>
+                                <li class="nav-item active"><a class="nav-link" data-toggle="pill" href="#bewertungen">Bewertungen</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane container" id="beschreibung">
+                                    <p>Falafel wie vom Turken.</p>
+                                </div>
+                                <div class="tab-pane container" id="zutaten">
+                                    <p>Kichererbsen und noch andere Sachen die rein gehen.</p>
+                                </div>
+                                <div class="tab-pane container active" id="bewertungen">
+                                    <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
+                                        <textarea name="bemerkung" rows="4" cols="80">Bitte geben Sie hier eine kurze Bewertung der Mahlzeit ein.
+                                       </textarea>
+
+
+                                        <label>Name: </label>
+                                        <input type="text" name="benutzer">
+
+                                        <label>Bewertung: </label>
+                                        <input type="number" id="bewertung" name="bewertung" min="1" max="5">
+
+                                        <button type="submit" class="btn btn-default">Übermitteln</button>
+                                        <input type="hidden" name="matrikel" value="3129739">
+                                        <input type="hidden" name="kontrolle" value="Eng">
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- end -->
                             <div class="tab">
                                 <button class="tablinks active" onclick="openDetail(event, 'Beschreibung')" id="defaultOpen">Beschreibung</button>
                                 <button class="tablinks" onclick="openDetail(event, 'Zutaten')">Zutaten</button>
@@ -97,25 +128,25 @@
                             </div>
 
                             <div id="Beschreibung" class="tabcontent">
-                                <p>Falafel wie vom Turken.</p>
+                               
                             </div>
 
                             <div id="Zutaten" class="tabcontent">
-                                <p>Kichererbsen und noch andere Sachen die rein gehen.</p>
+                                
                             </div>
 
                             <div id="Bewertungen" class="tabcontent">
-                                <form action="http://bc5.m2c-lab.fh-aachen.de:8080/data.php" method="post">
+                                <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
                                     <textarea name="bemerkung" rows="4" cols="80">Bitte geben Sie hier eine kurze Bewertung der Mahlzeit ein.
                                        </textarea>
-                                    <br />
+                                   
 
                                     <label>Name: </label>
                                     <input type="text" name="benutzer">
-                                    <br />
+                               
                                     <label>Bewertung: </label>
                                     <input type="number" id="bewertung" name="bewertung" min="1" max="5">
-                                    <br />
+                               
                                     <button type="submit" class="btn btn-default">Übermitteln</button>
                                     <input type="hidden" name="matrikelnummer" value="3129739">
                                     <input type="hidden" name="kontrolle" value="Key">
