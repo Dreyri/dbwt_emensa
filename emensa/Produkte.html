@@ -55,42 +55,29 @@
         <div class="row">
             <div class="col-md-2">
                 <form>
-                    <fieldset class="feld1">
+                    <fieldset class="em-border form-group">
                         <legend>Speisenliste filtern</legend>
                         <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                Kategorien
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Tellergericht </a></li>
-                                <li><a href="#">Vegetarisch </a></li>
-                                <li><a href="#">Empfehlung des Tages </a></li>
-                                <li><a href="#">Klassiker  </a></li>
-                                <li><a href="#"> Wok </a></li>
-                            </ul>
+                            <select class="form-control form-control-md">
+                                <optgroup label="Kategorien">
+                                    <option>Tellergericht</option>
+                                    <option>Vegetarisch</option>
+                                    <option>Vegan</option>
+                                </optgroup>
+                            </select>
                         </div>
-                        <ul>
-                            <li>
-                                <label>
-                                    <input type="checkbox" name="filter" value="available">
-                                    nur verfügbare
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox" name="filter" value="vegetarisch">
-                                    nur vegetarische
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox" name="filter" value="vegane">
-                                    nur vegane
-                                </label>
-                            </li>
-
-                        </ul>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="filter" value="available">
+                            <label class="form-check-label">nur verfügbare</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="filter" value="available">
+                            <label class="form-check-label">vegetarisch</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="filter" value="available">
+                            <label class="form-check-label">vegane</label>
+                        </div>
                         <button type="button" class="btn btn-default"> Speisen filtern</button>
                     </fieldset>
                 </form>
@@ -100,49 +87,49 @@
             <div class="col-md-8">
                 <div class="row row-eq-height">
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
+                        <div class="img-thumbnail">
 
-                            <img src="/img/produkte/CurryWok.jpg" alt="...">
+                            <img class="em-thumbnail" src="/img/produkte/CurryWok.jpg" alt="Curry Wok">
 
 
                             <div class="caption">
                                 <h4>Curry Wok</h4>
-                                <a class="links" href="Detail.html">Details</a>
+                                <a class="em-hl" href="Detail.html">Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
-                            <img src="/img/produkte/Schnitzel.jpg" alt="...">
+                        <div class="img-thumbnail">
+                            <img class="em-thumbnail" src="/img/produkte/Schnitzel.jpg" alt="Schnitzel">
                             <div class="caption">
                                 <h4>Schnitzel</h4>
-                                <a class="links" href="Detail.html">Details</a>
+                                <a class="em-hl" href="Detail.html">Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
-                            <img src="/img/produkte/Bratrolle.jpg" alt="...">
+                        <div class="img-thumbnail">
+                            <img class="em-thumbnail" src="/img/produkte/Bratrolle.jpg" alt="Bratrolle">
                             <div class="caption">
                                 <h4>Bratrolle</h4>
-                                <a class="links" href="Detail.html">Details</a>
+                                <a class="em-disabled" href="#">Vergriffen</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
-                            <img src="/img/produkte/KrautSalat.jpg" alt="...">
+                        <div class="img-thumbnail">
+                            <img class="em-thumbnail" src="/img/produkte/KrautSalat.jpg" alt="Kraut Salat">
                             <div class="caption">
                                 <h4>Krautsalat</h4>
-                                <a class="links" href="Detail.html">Details</a>
+                                <a class="em-hl" href="Detail.html">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class=" row">
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
-                            <img src="/img/produkte/Falafel.png" alt="...">
+                        <div class="img-thumbnail">
+                            <img class="em-thumbnail" src="/img/produkte/Falafel.png" alt="Falafel">
                             <div class="caption">
                                 <h4>Falafel</h4>
                                 <a class="links" href="Detail.html">Details</a>
@@ -150,29 +137,29 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
-                            <img src="/img/produkte/CurryWurst.jpg" alt="...">
+                        <div class="img-thumbnail">
+                            <img class="em-thumbnail" src="/img/produkte/CurryWurst.jpg" alt="...">
                             <div class="caption">
                                 <h4>Currywurst</h4>
-                                <a class="links" href="Detail.html">Details</a>
+                                <a class="em-hl" href="Detail.html">Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
-                            <img src="/img/produkte/KaeseBrot.jpg" alt="...">
+                        <div class="img-thumbnail">
+                            <img class="em-thumbnail" src="/img/produkte/KaeseBrot.jpg" alt="Kaese Brot">
                             <div class="caption details">
                                 <h4>Käsestulle</h4>
-                                <a class="links" href="Detail.html">Details</a>
+                                <a class="em-hl" href="Detail.html">Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="thumbnail myTestClass">
-                            <img src="/img/produkte/Spiegelei.jpg" alt="...">
+                        <div class="img-thumbnail">
+                            <img class="em-thumbnail" src="/img/produkte/Spiegelei.jpg" alt="Spiegelei">
                             <div class="caption">
                                 <h4>Spiegelei</h4>
-                                <a class="links" href="Detail.html">Details</a>
+                                <a class="em-hl" href="Detail.html">Details</a>
                             </div>
                         </div>
                     </div>
